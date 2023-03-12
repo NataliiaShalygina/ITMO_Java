@@ -28,10 +28,10 @@ public class Calculator {
         return minuend - subtrahend;
     }
     public double div(int dividend, int divider) {
-        return dividend / divider;
+        return (double) dividend / divider;
     }
     public double div(long dividend, long divider) {
-        return dividend / divider;
+        return (double) dividend / divider;
     }
     public double div(double dividend, double divider) {
         return dividend / divider;

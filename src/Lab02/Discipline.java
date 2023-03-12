@@ -1,8 +1,8 @@
 package Lab02;
 
 public enum Discipline {
-    menSingles,
-    womenSingles,
-    pairSkatings,
-    iceDance
+    MENSINGLES,
+    WOMENSINGLES,
+    PAIRSINGLES,
+    ICEDANCE
 }

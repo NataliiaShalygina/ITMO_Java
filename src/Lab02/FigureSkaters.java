@@ -1,6 +1,6 @@
 package Lab02;
 
-public class figureSkaters {
+public class FigureSkaters {
     private String name;
     private String surname;
     private Discipline disp;
@@ -45,15 +45,15 @@ public class figureSkaters {
         this.stat = stat;
     }
 
-    public figureSkaters(){
+    public FigureSkaters(){
     };
-    public figureSkaters(String name, String surname, Discipline disp, Status stat){
+    public FigureSkaters(String name, String surname, Discipline disp, Status stat){
         this.name = name;
         this.surname = surname;
         this.disp = disp;
         this.stat = stat;
     }
-    public figureSkaters(String name, String surname, Discipline disp, Integer age, String country, Status stat){
+    public FigureSkaters(String name, String surname, Discipline disp, Integer age, String country, Status stat){
         this.name = name;
         this.surname = surname;
         this.disp = disp;
@@ -63,7 +63,7 @@ public class figureSkaters {
     }
     @Override
     public String toString() {
-        return "figureSkaters{" +
+        return "FigureSkaters{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", disp='" + disp + '\'' +

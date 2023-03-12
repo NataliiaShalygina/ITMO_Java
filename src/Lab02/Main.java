@@ -8,17 +8,17 @@ public class Main {
         double exampleSum3 = calc.sum(6.0, 9.5);
         System.out.println(exampleSum1 + " " + exampleSum2 + " " + exampleSum3);
 
-        double exampleDiv = calc.div(100500L,100500L);
+        double exampleDiv = calc.div(2L,3L);
         long exampleMult = calc.mul(100500L,2L);
         int exampleSub = calc.sub(306,6);
         System.out.println(exampleDiv + " " + exampleMult + " " + exampleSub);
 
-        figureSkaters sashaTrusova = new figureSkaters("Sasha","Trusova", Discipline.womenSingles, Status.Active);
-        figureSkaters yuzuruHanyu = new figureSkaters();
+        FigureSkaters sashaTrusova = new FigureSkaters("Sasha","Trusova", Discipline.WOMENSINGLES, Status.ACTIVE);
+        FigureSkaters yuzuruHanyu = new FigureSkaters();
         yuzuruHanyu.setName("Yuzuru");
         yuzuruHanyu.setSurname("Hanyu");
-        yuzuruHanyu.setStat(Status.Completed);
-        figureSkaters shomaUno = new figureSkaters("Shoma","Uno", Discipline.menSingles, 25,"Japan", Status.Active);
+        yuzuruHanyu.setStat(Status.COMPLETED);
+        FigureSkaters shomaUno = new FigureSkaters("Shoma","Uno", Discipline.MENSINGLES, 25,"Japan", Status.ACTIVE);
         System.out.println(sashaTrusova);
         System.out.println(yuzuruHanyu);
         System.out.println(shomaUno);
