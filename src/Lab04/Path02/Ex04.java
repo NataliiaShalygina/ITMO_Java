@@ -2,40 +2,23 @@ package Lab04.Path02;
 import java.util.Arrays;
 public class Ex04 {
     public static void main(String[] args) {
-        int[] example = new int[]{1, 1,-9999,3,-9999,3};
+        int[] example = new int[]{1,2,5,2,1};
         System.out.println(unik(example));
     }
-
     public static String unik(int[] arr) {
-        int a = 0;
-        int m = 0;
-        String conc;
+        String conc = "Уникальных значений нет";
         for (int i = 0; i < arr.length; i++) {
-            int l =0;
-            a = arr[i];
+            int l = 0;
             for (int k = 0; k < arr.length; k++) {
-                if (a != arr[k]) {
+                if (arr[i] != arr[k] && i != k) {
                     l++;
                 }
             }
-            if (l == arr.length - 1) {
+            if (l == arr.length-1) {
+                conc = "Первое уникальное значение равно " + arr[i];
                 break;
-            } else {
-                a = -9999;
             }
         }
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == -9999) {
-                m++;
-            }
-        }
-        if (a==-9999) {
-            if (m == 1) {
-                conc = "Первое уникальное число равно -9999";
-            } else {
-                conc = "Уникальных чисел нет";
-            }
-        } else {conc = "Первое уникальное число равно " + a;}
         return conc;
     }
 }

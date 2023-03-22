@@ -8,17 +8,17 @@ public class Ex02 {
         int[] ar5 = new int[19];
         int[] ar15 = new int[6];
         int k = 0;
-        for (int i = 0; i < 33; i++) {
+        for (int i = 0; i < ar3.length; i++) {
             k = k + 3;
             ar3[i] = k;
         }
         k = 0;
-        for (int i = 0; i < 19; i++) {
+        for (int i = 0; i < ar5.length; i++) {
             k = k + 5;
             ar5[i] = k;
         }
         k = 0;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < ar15.length; i++) {
             k = k + 15;
             ar15[i] = k;
         }
